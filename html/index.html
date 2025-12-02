@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Pampas</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <li class="nav-item dropdown">
+            <img src="../img/Hamburger_icon.png" alt="" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink" id="menu_suspenso">
+                <a class="dropdown-item" href="#carrocel">Nossos Pratos</a>
+                <a class="dropdown-item" href="#reserva">Reserva</a>
+                <a class="dropdown-item" href="#depoimentos">Comnetários</a>
+                <a class="dropdown-item" href="#localizacao">Endereço</a>
+                <a class="dropdown-item" href="#depoimentos"></a>
+            </div>
+        </li>
+        <img src="../img/Logo LosPampas Script.png" alt="Logo Los Pampas(Nova)" class="logo_los_pampas">
+        <!-- <a href="https://wa.me/5577936130872" target="_blank">Entre em contato</a> -->
+    </header>
+    <main>
+        <section id="banner">
+            <div class="fade">
+                <h1>Só losPampas te proporciona</h1>
+                <h4>Uma esperiencia culinária INESQUECÍVEL</h4>
+            </div>
+        </section>
+        <section id="contato">
+            <a href="https://wa.me/5577936130872" target="_blank">
+                <div class="contatos">
+                    <img src="../img/telefone_logo.png" alt="Telefone icone" style="margin-bottom: 10px;">
+                    <p>Telefone</p>
+                </div>
+            </a>
+            <a href="mailto:lospampaschurrascaria@yahoo.com.br" target="_blank">
+                <div class="contatos">
+                    <img src="../img/email_logo.png" alt="Email icone">
+                    <p>E-mail</p>
+                </div>
+            </a>
+            <a href="https://www.instagram.com/lospampasbarreiras/" target="_blank">
+                <div class="contatos">
+                    <img src="../img/instagram_logo.png" alt="Instagram icone" style="margin-bottom: 5px;">
+                    <p>Instagram</p>
+                </div>
+            </a>
+        </section>
+        <section id="carrocel">
+            <h4>NOSSOS PRATOS</h4>
+            <div class="format">
+                <div class="image" id="d1"></div>
+                <div class="image" id="d2"></div>
+                <div class="image" id="d3"></div>
+                <div class="image" id="d4"></div>
+                <div class="image" id="d5"></div>
+                <div class="image" id="d6"></div>
+            </div>
+        </section>
+        <section id="reserva">
+            <h3>AGENDE SUA RESERVA</h3>
+            <img src="../img/garcon.png" alt="Garçõm desenho">
+            <form action="#" method="post">
+                <input type="text" name="nome" placeholder="Nome:" id="" class="campos">
+                <input type="email" name="email" id="" placeholder="E-mail: @exemplo.com" class="campos">
+                <input type="tel" id="telefone" placeholder="Número: (11) 98765-4321" class="campos">
+
+                <script>
+                const telefoneInput = document.getElementById('telefone');
+
+                telefoneInput.addEventListener('input', function(e) {
+                    let value = e.target.value.replace(/\D/g, '');
+                
+                    if (value.length <= 11) {
+                        value = value.replace(/(\d{2})(\d)/, '($1) $2');
+                        value = value.replace(/(\d{5})(\d{4})/, '$1-$2');
+                    }
+                
+                    e.target.value = value;
+                });
+                </script>
+
+                <input type="submit" value="AGENDAR">
+            </form>
+        </section>
+        <section id="depoimentos">
+            <h3>DEPOIMENTOS</h3>
+            <div class="lista">
+                <div class="comentario">
+                    <img src="../img/estrelas.png" alt="estrelas">
+                    <p class="depoimento">
+                        "A melhor carne que já comi em Barreiras! O ambiente é sofisticado e aconchegante, e o atendimento foi impecável. Recomendo o corte picanha, simplesmente perfeito!"
+                    </p>
+                    <h5 class="nome">Marcos Silva</h5>
+                </div>
+                <div class="comentario">
+                    <img src="../img/estrelas.png" alt="estrelas">
+                    <p class="depoimento">
+                        "Ambiente agradável e comida deliciosa. O preço é justo pela qualidade oferecida. Só senti falta de mais opções na salada, mas as carnes compensam totalmente. Voltarei com certeza!"
+                    </p>
+                    <h5 class="nome">Carlos Eduardo</h5>
+                </div>
+                <div class="comentario">
+                    <img src="../img/estrelas.png" alt="estrelas">
+                    <p class="depoimento">
+                        "Já fui várias vezes e a qualidade se mantém excelente. O costelão é divino! Os garçons são muito atenciosos e o ambiente tem uma decoração rústica que remete aos pampas. Perfeito para jantares especiais."
+                    </p>
+                    <h5 class="nome">Juliana Santos</h5>
+                </div>
+                <div class="comentario">
+                    <img src="../img/estrelas.png" alt="estrelas">
+                    <p class="depoimento">
+                        "Restaurante nota 10! Levei clientes importantes para jantar e todos ficaram impressionados. A carta de vinhos é bem selecionada e harmoniza perfeitamente com as carnes. Serviço de excelência!"
+                    </p>
+                    <h5 class="nome">Ricardo Almeida</h5>
+                </div>
+                <div class="comentario">
+                    <img src="../img/estrelas.png" alt="estrelas">
+                    <p class="depoimento">
+                        "Comida maravilhosa e atendimento de primeira. O ponto da carne estava exatamente como pedi. Só achei um pouco demorado para trazer as bebidas, mas no geral foi uma ótima experiência."
+                    </p>
+                    <h5 class="nome">Fernanda Costa</h5>
+                </div>
+            </div>
+        </section>
+        <section id="localizacao">
+            <h3>LOCALIZAÇÃO</h3>
+            <div class="local">
+                <img src="../img/map_braisil.png" alt="Mapa do Brasil">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d3839.597955483126!2d-44.9715229!3d-12.1433244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1spt-BR!2sbr!4v1764683183713!5m2!1spt-BR!2sbr" width="500" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+                <div class="maps">
+                    <p>
+                        Avenida Luis Eduardo Magalhaes, 131, -a, Flamengo - Barreiras - BA
+                    </p>
+                    <a href="https://maps.app.goo.gl/QSCQ61hZ2Y1FZPb58" target="_blank">
+                        ACESSAR PELO MAPS
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section id="fomras_pagamento">
+            <h2>ESPERAMOS POR VOCÊ!</h2>
+            <div class="conjunto">
+                <div class="blocos">
+                    <p>
+                        <strong>Horário de funcionamento</strong> <br>
+                        Das 11h às 15h <br>
+                        Domingo à Sexta-feira
+                    </p>
+                </div>
+                <div class="blocos">
+                    <p>
+                        <strong>Fomas de Pagamento:</strong> <br>
+                        <img src="../img/ban_cartoes.png" alt="Bandeiras dos cartões"> <br>
+                        Todos os Cartões, Pix, Dinheiro
+                    </p>
+                </div>
+            </div>  </p>
+                </div>
+            </par>
+        </section>
+    </main>
+    <footer>
+        <img src="../img/Logo LosPampas Script.png" alt="Logo Los Pampas(nova)">
+        <div class="assistencia">
+            <p>
+                Qualquer dúvida entre em contato pelo canal de atendimento
+            </p>
+            <div class="telefone">
+                <a href="https://wa.me/5577936130872" target="_blank">
+                    <img src="../img/telefone_logo.png" alt="Telefone icone">
+                    <p>
+                        (77) 3613 - 0872
+                    </p>
+                </a>
+            </div>
+        </div>
+        <div class="creditos">
+            <p>
+                DEV by
+            </p>
+            <a href="">
+                CEFM
+            </a>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

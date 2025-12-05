@@ -81,8 +81,8 @@ main{
     background-color: white;
 
     #banner{
-        background-image: url("../img/Banner\ LosPampas\ \(3\).png");
-        background-position: 0px 30%;
+        background-image: url("../img/Banner\ LosPampas\ \(3\).jpg");
+        background-position:0% 63%;
         background-repeat: no-repeat;
         background-size: cover;
         width: 100%;
@@ -430,10 +430,6 @@ main{
                     translate: -1px -1px;
                     box-shadow: 2px 2px 10px 0px rgba(0, 0, 0, 0.5);
                 }
-
-                /*
-                    Eu pensei em adicionar um bloco de texto na tela onde o usuários podreria descrever como seria sua reserva ou ao inves de usar um bloco de texto formatar a tela com opções selecionáveis usando radio-buttom ou check-box ou qaulquer outro campo 
-                */
             }
         }
     }
@@ -560,9 +556,6 @@ footer{
 
     @media (max-width: 935px) {
 
-        /* footer{
-
-        } */
 
         img{
             width: 120px;
